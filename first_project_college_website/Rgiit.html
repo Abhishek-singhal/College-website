@@ -1,0 +1,143 @@
+<DOCTYPE Html>
+<HTML>
+<Head>
+<title>An INTRODUCTORY WEBPAGE</title>
+<style>
+body {
+  background-color:;
+}
+#header{
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:5px;
+}
+#nav{
+	        line-height:30px;
+    	 background-color:#eeeeee;
+         width:200px;
+         float:left;
+         padding:5px;
+         height:400px;
+}
+#section{
+        width:550px;
+        float:center;
+        padding:10px
+}
+#footer{
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:5px;
+        clear:both;
+}
+a:visited{
+ 
+    color:#000000;
+
+    background-color:transparent;
+
+    text-decoration:none;
+	
+}
+
+
+a:hover {
+
+    color:red;
+
+    background-color:transparent;
+
+    text-decoration:underline;
+
+}
+
+a:active {
+ 
+    color:green;
+  
+    background-color:transparent;
+
+    text-decoration:underline;
+
+}
+
+</style>
+  <script>
+  if (localStorage.pagecount)
+ {
+ localStorage.pagecount=Number(localStorage.pagecount) +1;
+ }
+else
+ {
+ localStorage.pagecount=1;
+ }
+  window.alert("You are Visitor number " + localStorage.pagecount);
+  </script>
+
+</head>
+<body>
+
+
+<div id="header">
+<h1>
+IIIT-Amethi</h1>
+<h1><marquee>(An extension campus of IIIT-Allahabad)</marquee></h1>
+<h1 style="font-family:Comic Sans Ms;text-align="left";font-size:20pt;
+color:#00FF00;>
+Student login Portal
+</h1>
+<form name="login">
+Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "rit2015" && form.pswrd.value == "rgiit123")
+  {
+    window.open('course.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+</div>
+
+<div id="nav">
+Home<br>
+<a href="C:\Users\user\Desktop\html\about.html">About</a><br>
+<a href="C:\Users\user\Desktop\html\hostel.html">Hostels</a><br>
+<a href="C:\Users\user\Desktop\html\mess.html">Mess</a><br>
+<a href="C:\Users\user\Desktop\html\sports.html">Sports</a><br>
+<a href="C:\Users\user\Desktop\html\lab.html">Lab Facility</a><br>
+<a href="C:\Users\user\Desktop\html\m fac.html">Medical facility</a><br>
+<a href="C:\Users\user\Desktop\html\placement.htm">Placement</a><br>
+<a href="C:\Users\user\Desktop\html\rgiitian.html">About Rgiitians</a><br>
+<a href="./html/contactme.php">Contact Us</a><br>
+</div>
+
+<div id="section">
+<h2>Home</h2>
+<p><b><font size="6">"Sapping every worry of life and enjoying the bliss of it , is what defines an rgiitian"</font>
+</b></p>
+<p> We have made a functional webpage that have an insight of our college. It helps the general masses to know more about our college. The webpage contains each and every information regarding college, infrastructure,mess and hostels. 
+</p>
+<img src="./IMG_20150901_142438.jpg" width="1000" height="450"></p>
+<p><b>"About The Devlepors"</b><br>
+<br>
+<table>
+<tr><td>Name</b></td><td>Roll No.</td><td>Contact</td></tr>
+<tr><td><b>Abhishek Singhal</b></td><td>RIT2015016</td><td>8057683190</td></tr>
+<tr><td><b>Kartik Mehrotra</b></td><td>RIT2015046</td><td>7599349666</td></tr></table>
+</div>
+
+<div id="footer">Thanks for visiting</div>
+</body>
+</html>      
