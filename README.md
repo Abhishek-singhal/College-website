@@ -1,5 +1,5 @@
 # College-website
-A simple website for my college
+A simple website based on Html, Css and Java-Script
 
 
 
